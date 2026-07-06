@@ -7,12 +7,38 @@ Git / GitHub
 
 [Git 전체 흐름]
 1. 작업 : 실제로 코드를 작성, 수정
-2. 스테이징
+2. 스테이징(git add)
  : 변경된 파일을 올려놓는 공간
-3. 커밋
+3. 커밋(git commit)
  : 스테이징된 파일을 
   로컬 저장소에 영구 기록
-4. 푸시
+4. 푸시(git push)
  : 로컬 저장소의 커밋들을
    원격 저장소에 업로드
 
+.git 폴더 : 로컬 저장소
+원격 저장소 : GitHub Repository
+=======================
+git config : git 설정 명령어
+--global : 현재 컴퓨터 
+             사용자 전체에 적용하겠다
+user.name : 커밋 작성자 이름
+user.email : 커밋 작성자 이메일
+
+git init : git 저장소 생성
+git stauts : 변경 파일 상태 확인
+
+git add 파일명 : 특정 파일 추가
+git add . : 모든 파일 추가
+
+git commit -m "커밋메시지"
+: 커밋과 커밋할 때 메시지
+
+git remote add origin 저장소URL
+: 원격 저장소 연결
+
+git remote -v 
+	: 저장소 이름, URL 확인
+
+git push origin master
+	: 원격 저장소에 업로드
